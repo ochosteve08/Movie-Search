@@ -13,7 +13,6 @@ export default function Search() {
   const searchMovies = async (event) => {
     event.preventDefault();
 
-    // const API_KEY = "488918beef5450ebcf3796b77c6a4803";
     const URL = `${API_URL}?api_key=${API_KEY}&query=${query}&language=en-US&include_adult=false`;
 
     try {
@@ -23,12 +22,13 @@ export default function Search() {
     } catch (err) {
       console.log(err);
     }
+   setQuery('');
   };
   return (
     <>
       <form className="form" onSubmit={searchMovies}>
         <label className="label" htmlFor="query">
-          Movie Name
+          Movie Name:
         </label>
         <input
           className="input"

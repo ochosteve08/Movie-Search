@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
-export default function MovieCard({movie}) {
-  console.log(movie);
+export default function MovieCard({ movie }) {
   return (
-    <div className="card" >
+    <div className="card">
       <img
         className="card-image"
         src={`https://image.tmdb.org/t/p/w200/${movie.poster_path} `}
