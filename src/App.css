@@ -3,6 +3,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 40px;
+  overflow-x: hidden;
+  
   
 }
 
@@ -25,6 +27,7 @@ small{
 .form{
   display: grid;
   gap: 10px;
+  width: auto;
 
 }
 
@@ -41,6 +44,7 @@ small{
   border: 1px solid #ddd;
   outline: grey;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .btn{
@@ -50,6 +54,9 @@ small{
   color: white;
   border-radius: 20px;
   transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: auto;
+  
  }
 
  .btn:hover{
@@ -66,10 +73,13 @@ small{
   border-radius: 1rem;
   padding: 2rem 4rem;
   box-shadow: 1px 1px 5pc rgba(0,0,0,0.3);
+  max-width: 100%;
+  width: auto;
+  margin: 1rem auto;
  }
 
  .card-title{
-  font-size: 3rem;
+  font-size: 2rem;
  }
 
  .card-image{
@@ -103,3 +113,42 @@ small{
  .card-list{
   margin-top: 4rem;
  }
+
+  @media(max-width:418px){
+    .title{
+    text-align: center;
+    font-size: 2.4rem;
+    
+    
+}
+.container {
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.label{
+ 
+  font-size: 1.2rem;
+}
+.card-image{
+  width: 140px;
+}
+.card-title{
+  font-size: 2rem;
+  text-align: center;
+ }
+.card-desc {
+  display:none;
+
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+  }
